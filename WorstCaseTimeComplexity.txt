@@ -1,0 +1,18 @@
+Worst-case running time of methods:
+
+1. Direct Addressing
+ ADD(voterid , candidateid) -> O(1) for each record . The loop will have n interations at most to add 'n' elements.Hence, O(n) complexity for adding all records from file into array.
+
+ FIND(voterid) -> O(1) . Find operation in a sorted array always has O(1) time complexity as the index is directly accessed without any comparisons.
+
+ COUNT(candidateid) -> O(n). The loop will have n interations at most to compare the value of candidate ID with 'n' elements in order to determine count.Hence, O(n) complexity.
+
+2. Hash Table
+ ADD(voterid , candidateid) -> O(1) for each record. Running time for every record= constant time [getting hash and putting the record in hashed location]. hence, utmost n iterations and hence O(n) complexity for adding all records from file into hash map.
+
+ FIND(voterid) -> O(1). Running time = constant time[getting hash and returning record from hashed location]. For any find operation, hash map will have constant running time which is O(1).
+
+ COUNT(candidateid) -> O(n). The loop will have n interations at most to compare the value of candidate ID with 'n' elements in order to determine count.Hence, O(n) complexity.
+
+
+ 
